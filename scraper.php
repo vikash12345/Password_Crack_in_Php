@@ -7,7 +7,7 @@ define('h_value', $MD);    	/*define() function defines h_value constant with md
 $p = strlen($name0);
 define('P_MAX_LEN',$p );  	/*define() function defines P_MAX_LEN constant with $p i.e. length of password entered, which is the maximum length of a password to brute force*/
 //$c_set = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';          /*character set which is used to brute force the password*/
-$c_set = 'etaoinshrdlcumwfgypbvkxjqz'; //ETAOINSHRDLCUMWFGYPBVKXJQZ; 	/*character set given by Samuel Morse (1791-1872)*/
+$c_set = 'b8bdc226f0849b483883f1cfee712df8'; //ETAOINSHRDLCUMWFGYPBVKXJQZ; 	/*character set given by Samuel Morse (1791-1872)*/
 $c_len = strlen($c_set); 		/*strlen() function is used to find the length of the character set*/
 function repeat($width, $position, $character)
 {     
