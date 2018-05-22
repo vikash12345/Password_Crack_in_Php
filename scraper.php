@@ -1,14 +1,5 @@
-<?
-// This is a template for a PHP scraper on morph.io (https://morph.io)
-// including some code snippets below that you should find helpful
-
-// require 'scraperwiki.php';
-// require 'scraperwiki/simple_html_dom.php';
-//
-// // Read in a page
-// $html = scraperwiki::scrape("http://foo.com");
-//<?php 
-$name0 = "b8bdc226f0849b483883f1cfee712df8"; 	/* get the value of a password sent using method="post" from the login      form */
+<?php 
+$name0 = $_POST['password']; 	/* get the value of a password sent using method="post" from the login      form */
 $start_time = microtime(true);               /*microtime() function returns the current timestamp. This function is used to start the timer for calculating	the time required to brute force the password */
 set_time_limit(300);  	/*set_time_limit fuction is used to set the number of seconds a script is allowed to run*/
 $MD = md5($name0);	/*encryption scheme used to encrypt the password recieved using method="post"*/
@@ -49,4 +40,3 @@ echo 'target hash: '.h_value."\r\n";
 repeat(P_MAX_LEN, 0, ''); 			/*call to repeat() function*/
 echo "NO PASSWORD FOUND";  
 ?>
-
